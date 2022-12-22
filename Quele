@@ -1,0 +1,19 @@
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+public class Main {
+    public static void main( String[] args ) {
+        Queue<Integer> queue = new PriorityQueue<> ();
+        queue.add ( 10 );
+        queue.add ( 20 );
+        queue.add ( 15 );
+        int numElements = queue.size ();
+        System.out.println ( "Queue elements: " + queue );
+        for (int i = 0; i < numElements; i++) {
+            System.out.println ( "Removed element: " + queue.poll () );
+
+        }
+
+    }
+}
+
